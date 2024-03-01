@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>VectorDBs</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -12,12 +12,57 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script src="//unpkg.com/force-graph"></script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h2>Vector DBs</h2>
+					<p>
+						Decomposition for clarity
+						<br/><br/><br/>
+
+						Mirko Raca @ Nestle Research
+					</p>
+					<div id="graph"></div>
+
+				</section>
+				<section data-markdown>
+					<div>
+						<textarea data-template>
+						## Intro
+						- Setting expectations
+						- Intro & motivation
+						- Overview of parts
+						- Key algorithms
+						- Orientation in numbers
+						</textarea>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h3>Overview of VecDBs</h3>
+						<p>
+							LLMs exploded. They sound smart - but they have no memory.
+							Problems with memory:
+							<ul>
+								<li>Domain specific</li>
+								<li>Needs to be updated</li>
+								<li>Inefficient to push it into the model</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<p>In a nutshell - Nearest Neighbor search</p>
+					</section>
+					<section>
+						<p></p>
+					</section>
+				</section>
+				<section>
+					<h3>Embeddings</h3>
+				</section>
 			</div>
 		</div>
 
@@ -35,6 +80,6 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
-		</script>
-	</body>
+	</script>
+</body>
 </html>
